@@ -1,0 +1,159 @@
+/* Importa a fonte Comfortaa do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos nas extremidades */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #FFFFFF; /* Cor de fundo do cabeçalho */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+}
+
+/* Estilo do contêiner de logos */
+.logo-container {
+    width: 100%; /* Faz o contêiner ocupar toda a largura do cabeçalho */
+    display: flex;
+    justify-content: space-between; /* Mantém uma logo na esquerda e outra na direita */
+}
+
+/* Estilo das logos individuais */
+.logo {
+    max-width: 100px; /* Limita a largura */
+    height: auto; /* Mantém a altura proporcional */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Comfortaa", sans-serif; /* Define a fonte padrão */
+    background: linear-gradient(to bottom, #da291c, #f5832b); /* Cor de fundo da página com degradê vertical */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    /*justify-content: center;*/ /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+h2 {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Classe para estilizar a div*/
+.centralizar {
+    text-align: center;
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Classe que estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    display: flex; /* Torna o elemento um container flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    width: 100%; /* Largura máxima da caixa de resultados */
+    height: 100%; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Classe que estiliza cada item de resultado */
+.item-resultado {
+    width: 90%;
+    max-width: 60rem;
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin-right: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: left;
+}
+
+/* Classe que estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Classe que estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Classe que estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Classe que estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #000000; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Classe que ajusta a foto do cronograma*/
+.cronograma-img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do container */
+    max-width: 800px; /* Limita a largura máxima para 800px */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem ser um elemento de bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 15px; /* Adiciona cantos arredondados */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: auto;
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    flex-shrink: 0; /* Garante que o footer não diminua de tamanho */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}

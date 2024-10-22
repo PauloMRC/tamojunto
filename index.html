@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tamo Junto!</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagens\Logo_Tamo_junto_nb.png" alt="Logo Tamo Junto" class="logo esquerda">
+            <img src="imagens\Logo_Conexao_Voluntaria_nb.png" alt="Logo Conexão Voluntária" class="logo direita">
+        </div>
+    </header>
+<!--Busca-->
+    <main>
+        <section>
+            <h2>Arquivos</h2>
+            <img src="imagens\cronograma.png" alt="Imagem do cronograma" class="cronograma-img">
+        </section>
+        <section>
+            <h2>Cronograma</h2>
+            <img src="imagens\cronograma.png" alt="Imagem do cronograma" class="cronograma-img">
+        </section>
+        <section>
+            <div class="centralizar">
+                <input type="text" id="campo-pesquisa" nome="campo-pesquisa" placeholder="Insira o encontro" maxlength="20" title="Selecione o encontro para obter o material (ex.: Encontro 1)"><br>
+                <button onclick="pesquisar()" type="submit">Buscar</button>
+            </div>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    <footer>
+        <img src="imagens\Logo_Instituto_Claro_sem_fundo.png" alt="Logo Conexão Voluntária" class="logo">
+        <p>2024 - ©Claro do Brasil. Todos os direitos reservados.</p>
+        <p>Contato: <a href="https://chat.whatsapp.com/CwFlHEiEc2c6IWkhKQ8Pmt" target="_blank">Pessoas Tutoras _ Programa de Tutoria Jovem</a></p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
